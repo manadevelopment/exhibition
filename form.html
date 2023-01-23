@@ -84,10 +84,188 @@
               </g>
             </g></svg
         ></a>
+        <div class="toggle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
       </nav>
     </header>
     <div class="form-sec">
-        
+      <form action="#" id="form">
+        <div class="form__row">
+          <div class="form__col">
+            <select name="type" id="type">
+              <option value="" selected disabled>
+                نوع ثبت‌نام خود را انتخاب کنید
+              </option>
+              <option value="genuine">حقیقی</option>
+              <option value="legal">حقوقی</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__col">
+            <div class="input-material">
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value=""
+                aria-labelledby="firstName"
+              />
+              <label class="label" for="firstName" id="label-firstName">
+                <div class="text">نام</div>
+              </label>
+            </div>
+          </div>
+          <div class="form__col">
+            <div class="input-material">
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value=""
+                aria-labelledby="lastName"
+              />
+              <label class="label" for="fname" id="label-lastName">
+                <div class="text">نام خانوادگی</div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__col">
+            <p>محل تولد</p>
+            <div class="select-city">
+              <select name="state" id="form__state">
+                <option value="0">لطفا استان را انتخاب نمایید</option>
+                <option value="تهران">تهران</option>
+                <option value="گیلان">گیلان</option>
+                <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+                <option value="خوزستان">خوزستان</option>
+                <option value="فارس">فارس</option>
+                <option value="اصفهان">اصفهان</option>
+                <option value="خراسان رضوی">خراسان رضوی</option>
+                <option value="قزوین">قزوین</option>
+                <option value="سمنان">سمنان</option>
+                <option value="قم">قم</option>
+                <option value="مرکزی">مرکزی</option>
+                <option value="زنجان">زنجان</option>
+                <option value="مازندران">مازندران</option>
+                <option value="گلستان">گلستان</option>
+                <option value="اردبیل">اردبیل</option>
+                <option value="آذربایجان غربی">آذربایجان غربی</option>
+                <option value="همدان">همدان</option>
+                <option value="کردستان">کردستان</option>
+                <option value="کرمانشاه">کرمانشاه</option>
+                <option value="لرستان">لرستان</option>
+                <option value="بوشهر">بوشهر</option>
+                <option value="کرمان">کرمان</option>
+                <option value="هرمزگان">هرمزگان</option>
+                <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+                <option value="یزد">یزد</option>
+                <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+                <option value="ایلام">ایلام</option>
+                <option value="کهگلویه و بویراحمد">کهگلویه و بویراحمد</option>
+                <option value="خراسان شمالی">خراسان شمالی</option>
+                <option value="خراسان جنوبی">خراسان جنوبی</option>
+                <option value="البرز">البرز</option>
+              </select>
+              <select name="city" id="form__city">
+                <option value="0">لطفا استان را انتخاب نمایید</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__col">
+            <p>محل سکونت</p>
+            <div class="select-city">
+              <select name="state" id="form__state">
+                <option value="0">لطفا استان را انتخاب نمایید</option>
+                <option value="تهران">تهران</option>
+                <option value="گیلان">گیلان</option>
+                <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+                <option value="خوزستان">خوزستان</option>
+                <option value="فارس">فارس</option>
+                <option value="اصفهان">اصفهان</option>
+                <option value="خراسان رضوی">خراسان رضوی</option>
+                <option value="قزوین">قزوین</option>
+                <option value="سمنان">سمنان</option>
+                <option value="قم">قم</option>
+                <option value="مرکزی">مرکزی</option>
+                <option value="زنجان">زنجان</option>
+                <option value="مازندران">مازندران</option>
+                <option value="گلستان">گلستان</option>
+                <option value="اردبیل">اردبیل</option>
+                <option value="آذربایجان غربی">آذربایجان غربی</option>
+                <option value="همدان">همدان</option>
+                <option value="کردستان">کردستان</option>
+                <option value="کرمانشاه">کرمانشاه</option>
+                <option value="لرستان">لرستان</option>
+                <option value="بوشهر">بوشهر</option>
+                <option value="کرمان">کرمان</option>
+                <option value="هرمزگان">هرمزگان</option>
+                <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+                <option value="یزد">یزد</option>
+                <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+                <option value="ایلام">ایلام</option>
+                <option value="کهگلویه و بویراحمد">کهگلویه و بویراحمد</option>
+                <option value="خراسان شمالی">خراسان شمالی</option>
+                <option value="خراسان جنوبی">خراسان جنوبی</option>
+                <option value="البرز">البرز</option>
+              </select>
+              <select name="city" id="form__city">
+                <option value="0">لطفا استان را انتخاب نمایید</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__col">
+            <p>محل فعالیت</p>
+            <div class="select-city">
+              <select name="state" id="form__state">
+                <option value="0">لطفا استان را انتخاب نمایید</option>
+                <option value="تهران">تهران</option>
+                <option value="گیلان">گیلان</option>
+                <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+                <option value="خوزستان">خوزستان</option>
+                <option value="فارس">فارس</option>
+                <option value="اصفهان">اصفهان</option>
+                <option value="خراسان رضوی">خراسان رضوی</option>
+                <option value="قزوین">قزوین</option>
+                <option value="سمنان">سمنان</option>
+                <option value="قم">قم</option>
+                <option value="مرکزی">مرکزی</option>
+                <option value="زنجان">زنجان</option>
+                <option value="مازندران">مازندران</option>
+                <option value="گلستان">گلستان</option>
+                <option value="اردبیل">اردبیل</option>
+                <option value="آذربایجان غربی">آذربایجان غربی</option>
+                <option value="همدان">همدان</option>
+                <option value="کردستان">کردستان</option>
+                <option value="کرمانشاه">کرمانشاه</option>
+                <option value="لرستان">لرستان</option>
+                <option value="بوشهر">بوشهر</option>
+                <option value="کرمان">کرمان</option>
+                <option value="هرمزگان">هرمزگان</option>
+                <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+                <option value="یزد">یزد</option>
+                <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+                <option value="ایلام">ایلام</option>
+                <option value="کهگلویه و بویراحمد">کهگلویه و بویراحمد</option>
+                <option value="خراسان شمالی">خراسان شمالی</option>
+                <option value="خراسان جنوبی">خراسان جنوبی</option>
+                <option value="البرز">البرز</option>
+              </select>
+              <select name="city" id="form__city">
+                <option value="0">لطفا استان را انتخاب نمایید</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <input class="btn" type="submit" value="ارسال" />
+      </form>
     </div>
     <footer id="footer">
       <div class="footer-wrapper">
@@ -139,5 +317,6 @@
   <!-- swiper -->
   <script src="js/swiper-bundle.min.js"></script>
   <!-- end swiper -->
+  <script src="js/city.js"></script>
   <script src="js/app.js"></script>
 </html>
