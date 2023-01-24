@@ -13,12 +13,24 @@ if (document.querySelector(".home-hero-slider")) {
   });
 }
 
-const inputs = document.querySelectorAll(
-  ".input-material input,.input-material textarea"
-);
+if (
+  document.querySelectorAll(".input-material input,.input-material textarea")
+) {
+  const inputs = document.querySelectorAll(
+    ".input-material input,.input-material textarea"
+  );
 
-for (const input of inputs) {
-  input.addEventListener("input", () => {
-    input.setAttribute("value", input.value);
-  });
+  for (const input of inputs) {
+    input.addEventListener("input", () => {
+      input.setAttribute("value", input.value);
+    });
+  }
 }
+
+const toggleBtn = document.querySelector(".toggle-menu");
+
+const menuHeader = document.querySelector(".header-menu ");
+
+toggleBtn.addEventListener("click", () => {
+  menuHeader.classList.toggle("open");
+});
