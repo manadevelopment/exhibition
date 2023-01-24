@@ -380,8 +380,8 @@ a {
   #header .btn.btn--gray {
     order: 2;
   }
-  #header .btn:last-child {
-    order: 2;
+  #header .btn:last-of-type {
+    order: 3;
   }
 
   .profile-btn {
@@ -706,9 +706,27 @@ a {
 /* * form page */
 
 .form-sec {
-  width: var(--width);
+  width: 60%;
   max-width: var(--max-width);
   align-self: center;
+  padding: 2rem;
+  border-radius: calc(var(--border-radius) * 2);
+  background-color: var(--color-light-text);
+  box-shadow: 0 5px 10px -5px #00000063;
+  border: 0.1rem solid #efefef;
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-sec__title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  border-bottom: 0.5rem solid var(--color-blue);
+  align-self: flex-start;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
