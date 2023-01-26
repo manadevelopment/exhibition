@@ -72,6 +72,11 @@ a {
   border: 0;
   color: var(--color-light-text);
 }
+.btn.btn--disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
 
 .btn.btn--register {
   background-color: var(--color-light-text);
@@ -1088,5 +1093,54 @@ a {
 
   .profile-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  * email ver page */
+
+.emailver-sec {
+  width: var(--width);
+  max-width: var(--max-width);
+  padding-block: 3rem;
+}
+
+.emailver-text {
+  margin: 0;
+}
+
+.emailver-sec .btn {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .emailver-sec {
+    width: var(--mobile-width);
+  }
+}
+
+/* * phone ver page */
+
+.phonever-sec {
+  width: var(--width);
+  max-width: var(--max-width);
+  padding-block: 3rem;
+  align-items: center;
+}
+
+.phonever-sec > p {
+  margin: 0;
+  text-align: center;
+}
+.phonever-sec > p > span {
+  color: var(--color-blue);
+}
+
+.phonever-sec .btn {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .phonever-sec {
+    width: var(--mobile-width);
   }
 }
