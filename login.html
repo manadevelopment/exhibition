@@ -91,117 +91,139 @@
         </div>
       </nav>
     </header>
-    <div class="home-hero">
-      <div class="swiper home-hero-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide hero-card">
-            <img class="hero-card__img" src="img/photo.jpg" alt="" />
-            <div class="hero-card__content">
-              <h2 class="hero-card__title">اینجا تیتر است</h2>
-              <p class="hero-card__text">
-                صنایع دستی خیلی خوب است و برای وطن مفید است طی آخرین تحقیقات هم
-                ویتامین درونش کشف شده قالیبافی سفالگری معرق کاری نجاری
-              </p>
-              <a href="#" class="btn btn--orange">بیشتر</a>
+    <div class="box login-sec">
+      <div class="login-col">
+        <h2 class="login-col__title"><span>ورود</span> <span>Sign in</span></h2>
+        <form action="#" id="form" class="login-form">
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value=""
+                  aria-labelledby="phoneNumber"
+                />
+                <label class="label" for="fname" id="label-phoneNumber">
+                  <div class="text">تلفن همراه</div>
+                </label>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide hero-card">
-            <img class="hero-card__img" src="img/photo.jpg" alt="" />
-            <div class="hero-card__content">
-              <h2 class="hero-card__title">اینجا تیتر است</h2>
-              <p class="hero-card__text">
-                صنایع دستی خیلی خوب است و برای وطن مفید است طی آخرین تحقیقات هم
-                ویتامین درونش کشف شده قالیبافی سفالگری معرق کاری نجاری
-              </p>
-              <a href="#" class="btn btn--orange">بیشتر</a>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value=""
+                  aria-labelledby="password"
+                />
+                <label class="label" for="fname" id="label-password">
+                  <div class="text">رمز عبور</div>
+                </label>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide hero-card">
-            <img class="hero-card__img" src="img/photo.jpg" alt="" />
-            <div class="hero-card__content">
-              <h2 class="hero-card__title">اینجا تیتر است</h2>
-              <p class="hero-card__text">
-                صنایع دستی خیلی خوب است و برای وطن مفید است طی آخرین تحقیقات هم
-                ویتامین درونش کشف شده قالیبافی سفالگری معرق کاری نجاری
-              </p>
-              <a href="#" class="btn btn--orange">بیشتر</a>
+          <div class="form__row">
+            <div class="form__col">
+              <a class="login-form__forget" href="#">رمز را فراموش کرده‌ای؟</a>
             </div>
           </div>
-        </div>
-        <div class="swiper-button-next hero-slider-button-next">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-            <path
-              d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
-            />
-          </svg>
-        </div>
-        <div class="swiper-button-prev hero-slider-button-prev">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-            <path
-              d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
-            />
-          </svg>
-        </div>
-        <div class="hero-slider-pagination swiper-pagination"></div>
+
+          <input class="btn" type="submit" value="ارسال" />
+        </form>
       </div>
-    </div>
-    <div class="home-stats">
-      <div class="stats-card">
-        <h2 class="stats-card__number"><span>۱۴۰۰۰</span></h2>
-        <p class="stats-card__title">فضای کلی<br />نمایشگاه</p>
+      <div class="login-col">
+        <h2 class="login-col__title">
+          <span>ثبت‌نام</span> <span>Sign up</span>
+        </h2>
+        <form action="#" id="form" class="login-form">
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  value=""
+                  aria-labelledby="firstName"
+                />
+                <label class="label" for="fname" id="label-firstName">
+                  <div class="text">نام</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  value=""
+                  aria-labelledby="lastName"
+                />
+                <label class="label" for="lastName" id="label-lastName">
+                  <div class="text">نام‌خانوادگی</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value=""
+                  aria-labelledby="phoneNumber"
+                />
+                <label class="label" for="fname" id="label-phoneNumber">
+                  <div class="text">تلفن همراه</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value=""
+                  aria-labelledby="password"
+                />
+                <label class="label" for="fname" id="label-password">
+                  <div class="text">رمز عبور</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input-material">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  value=""
+                  aria-labelledby="password"
+                />
+                <label class="label" for="fname" id="label-password">
+                  <div class="text">تکرار رمز عبور</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <input class="btn" type="submit" value="ارسال" />
+        </form>
       </div>
-      <div class="stats-card">
-        <h2 class="stats-card__number"><span>۴</span></h2>
-        <p class="stats-card__title">تعداد<br />سالن‌ها</p>
-      </div>
-      <div class="stats-card">
-        <h2 class="stats-card__number"><span>۳۲۱</span></h2>
-        <p class="stats-card__title">تعداد<br />غرفه‌ها</p>
-      </div>
-      <div class="stats-card">
-        <h2 class="stats-card__number"><span>۱۴۵۰</span></h2>
-        <p class="stats-card__title">تعداد<br />مشارکت کنندگان</p>
-      </div>
-      <div class="stats-card">
-        <h2 class="stats-card__number"><span>۱۵۰</span></h2>
-        <p class="stats-card__title">رویدادهای<br />جانبی</p>
-      </div>
-    </div>
-    <div class="register-row">
-      <div class="register-row__wrapper">
-        <div class="register-row__line"></div>
-        <p class="register-row__text">جهت ثبت‌نام در نمایشگاه</p>
-        <a href="#" class="btn btn--register">کلیک کنید</a>
-      </div>
-    </div>
-    <div class="home-sponsers">
-      <h2 class="home-sponsers__title">حامیان</h2>
-      <div class="home-sponsers__wrapper">
-        <img src="img/iran-logo.png" alt="" />
-        <img src="img/iran-logo.png" alt="" />
-        <img src="img/iran-logo.png" alt="" />
-        <img src="img/iran-logo.png" alt="" />
-        <img src="img/iran-logo.png" alt="" />
-        <img src="img/iran-logo.png" alt="" />
-        <img src="img/iran-logo.png" alt="" />
-      </div>
-    </div>
-    <div class="home-photos">
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
-      <a href="#"><img src="img/photo.jpg" alt="" /></a>
     </div>
     <footer id="footer">
       <div class="footer-wrapper">

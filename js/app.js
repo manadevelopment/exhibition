@@ -13,6 +13,8 @@ if (document.querySelector(".home-hero-slider")) {
   });
 }
 
+// * select city and state in form
+
 if (
   document.querySelectorAll(".input-material input,.input-material textarea")
 ) {
@@ -27,10 +29,23 @@ if (
   }
 }
 
-const toggleBtn = document.querySelector(".toggle-menu");
+// * mobile menu
 
+const toggleBtn = document.querySelector(".toggle-menu");
 const menuHeader = document.querySelector(".header-menu ");
 
 toggleBtn.addEventListener("click", () => {
   menuHeader.classList.toggle("open");
 });
+
+// * collapsible
+
+const collapsibles = document.querySelectorAll(".collapsible");
+
+for (const collapsible of collapsibles) {
+  collapsible
+    .querySelector(".collapsible__button")
+    .addEventListener("click", () => {
+      collapsible.classList.toggle("open");
+    });
+}
