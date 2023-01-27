@@ -49,3 +49,16 @@ for (const collapsible of collapsibles) {
       collapsible.classList.toggle("open");
     });
 }
+
+// * select image with preview
+
+if (document.querySelector(".form__avatar")) {
+  const inputFile = document.getElementById("form__avatar-input");
+  const imagePreview = document.querySelector(".form__avatar-img");
+
+  inputFile.addEventListener("change", () => {
+    console.log(URL.createObjectURL(inputFile.files[0]));
+    imagePreview.src = URL.createObjectURL(inputFile.files[0]);
+    imagePreview.style.display = "block";
+  });
+}
