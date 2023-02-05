@@ -779,14 +779,12 @@ a {
 .gallery__item {
   margin: 0;
 }
-/* mobile flex gallery style(optional) */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .gallery {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    grid-gap: 5px;
+    padding: 5px;
   }
-} */
+}
 
 /* * form page */
 
@@ -823,12 +821,12 @@ a {
 /* about us*/
 
 .section-about {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 10rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .section-about {
-    padding: 20rem 0;
+    padding: 6rem 0;
   }
 }
 .u-center-text {
@@ -846,6 +844,7 @@ a {
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 700;
+  width: 80%;
   display: inline-block;
   background-image: -webkit-gradient(
     linear,
@@ -924,18 +923,7 @@ a {
 .row .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
-.row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
-}
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
-}
-.row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
-}
-.row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
-}
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -1047,12 +1035,12 @@ a {
 }
 /* cards */
 .section-tours {
-  background-color: #f7f7f7;
-  padding: 15rem 0 15rem 0;
+  background-color: #fff;
+  padding: 10rem 0 10rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .section-tours {
-    padding: 20rem 0 10rem 0;
+    padding: 6rem 0;
   }
 }
 .card {
